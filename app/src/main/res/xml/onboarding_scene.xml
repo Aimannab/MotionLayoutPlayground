@@ -4,7 +4,20 @@
 
     <Transition
         app:constraintSetEnd="@id/end"
-        app:constraintSetStart="@id/start" />
+        app:constraintSetStart="@id/start">
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:alpha="0"
+                app:framePosition="0"
+                app:target="@id/previousButton" />
+
+            <KeyAttribute
+                android:alpha="1"
+                app:framePosition="20"
+                app:target="@id/previousButton" />
+        </KeyFrameSet>
+    </Transition>
 
     <ConstraintSet android:id="@+id/start">
 
