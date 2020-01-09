@@ -16,6 +16,27 @@
                 android:alpha="1"
                 app:framePosition="20"
                 app:target="@id/previousButton" />
+            
+            <KeyAttribute
+                android:translationY="0dp"
+                app:framePosition="75"
+                app:target="@id/nextButton" />
+
+            <KeyAttribute
+                android:translationY="50dp"
+                app:framePosition="100"
+                app:target="@id/nextButton" />
+
+            <KeyAttribute
+                android:translationX="70dp"
+                app:framePosition="75"
+                app:target="@id/finishButton" />
+
+            <KeyAttribute
+                android:translationX="0dp"
+                app:framePosition="100"
+                app:target="@id/finishButton" />
+
         </KeyFrameSet>
     </Transition>
 
@@ -38,6 +59,7 @@
             android:id="@id/nextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:translationY="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -45,6 +67,7 @@
             android:id="@id/finishButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:translationX="70dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
     </ConstraintSet>
@@ -68,6 +91,7 @@
             android:id="@id/nextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:translationY="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -75,6 +99,7 @@
             android:id="@id/finishButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:translationX="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
     </ConstraintSet>
