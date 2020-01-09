@@ -16,7 +16,7 @@
                 android:alpha="1"
                 app:framePosition="20"
                 app:target="@id/previousButton" />
-            
+
             <KeyAttribute
                 android:translationY="0dp"
                 app:framePosition="75"
@@ -36,7 +36,53 @@
                 android:translationX="0dp"
                 app:framePosition="100"
                 app:target="@id/finishButton" />
+        </KeyFrameSet>
 
+        <KeyFrameSet>
+            <KeyAttribute
+                app:framePosition="20"
+                app:target="@id/background"
+                app:transitionEasing="accelerate">
+                <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#A5C63A" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                app:framePosition="40"
+                app:target="@id/background"
+                app:transitionEasing="accelerate">
+                <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#C3E6E6" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                app:framePosition="60"
+                app:target="@id/background"
+                app:transitionEasing="accelerate">
+                <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#464E69" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                app:framePosition="80"
+                app:target="@id/background"
+                app:transitionEasing="accelerate">
+                <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#AF6DA2" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                app:framePosition="100"
+                app:target="@id/background"
+                app:transitionEasing="accelerate">
+                <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#FBBF1D" />
+            </KeyAttribute>
         </KeyFrameSet>
     </Transition>
 
